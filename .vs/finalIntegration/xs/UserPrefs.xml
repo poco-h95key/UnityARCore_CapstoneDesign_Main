@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{93A7D312-F08A-4CF4-F420-E7CBA8DEBD30}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UITouch.cs">
+    <Files>
+      <File FileName="Assets/Scripts/LevelLoader.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UITouch.cs" Line="39" Column="60" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="finalIntegration" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="UITouch.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e70802c2-b3ca-4ab2-9045-a3456f8bb3a0" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
