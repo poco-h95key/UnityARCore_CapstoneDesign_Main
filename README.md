@@ -3,7 +3,8 @@
 ARCore : https://developers.google.com/ar/ <br>  
 
 # Architecture
-<img width="1340" alt="스크린샷 2019-04-19 오후 6 01 04" src="https://user-images.githubusercontent.com/41403898/56416864-1dd7a400-62cd-11e9-97ce-b61c0aa4d912.png">
+<img width="1440" alt="스크린샷 2019-05-22 오후 4 01 07" src="https://user-images.githubusercontent.com/41403898/58153770-e3d23700-7caa-11e9-950c-5c7e4399f4f0.png">
+
 * Client : <br>
 * Server : https://github.com/Esensia/nodejs_basic (main.js) <br> 
 * AssetBundle : https://github.com/Esensia/AssetBundle <br>
