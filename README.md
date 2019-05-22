@@ -48,6 +48,7 @@ IEnumerator Start()
     {
         www = UnityWebRequestAssetBundle.GetAssetBundle("http://13.125.111.193/scene3/scene_3");
     }
+    
     yield return www.SendWebRequest();
     bundle = DownloadHandlerAssetBundle.GetContent(www);
     if (www.isNetworkError || www.isHttpError)
