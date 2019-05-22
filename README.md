@@ -36,7 +36,18 @@ float delayTime = 1; // time to delay
 
 IEnumerator Start()
 {
-    www = UnityWebRequestAssetBundle.GetAssetBundle("http://13.125.111.193/scene1/scene_1");
+    if (findObject.Curobj == "First")
+    {
+        www = UnityWebRequestAssetBundle.GetAssetBundle("http://13.125.111.193/scene1/scene_1");
+    } 
+    else if (findObject.Curobj == "Second")
+    {
+        www = UnityWebRequestAssetBundle.GetAssetBundle("http://13.125.111.193/scene2and/scene_2");
+    }
+    else if(findObject.Curobj == "Third")
+    {
+        www = UnityWebRequestAssetBundle.GetAssetBundle("http://13.125.111.193/scene3/scene_3");
+    }
     yield return www.SendWebRequest();
     bundle = DownloadHandlerAssetBundle.GetContent(www);
     if (www.isNetworkError || www.isHttpError)
