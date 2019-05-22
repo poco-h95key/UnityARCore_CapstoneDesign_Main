@@ -1,3 +1,8 @@
+# Purpose
+* Users can experience architecture and allocate furnitures by using mobile phone
+* ARCore helps you to render AR  
+![Screenshot_20190522-170004_scene_1](https://user-images.githubusercontent.com/41403898/58165871-9ca47000-7cc3-11e9-9d90-e9e7626b03e7.jpg)
+
 # ARCore
 ![53875879-ebd5ef80-4048-11e9-9948-e7333be00c4d](https://user-images.githubusercontent.com/41403898/56416777-d6e9ae80-62cc-11e9-9a57-536e497fa02e.png)
 ARCore : https://developers.google.com/ar/ <br>  
