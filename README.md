@@ -57,8 +57,8 @@ IEnumerator Start()
 # MainScreen
 <img width="939" alt="스크린샷 2019-05-22 오후 4 16 17" src="https://user-images.githubusercontent.com/41403898/58154602-f8173380-7cac-11e9-880f-48003c26ea53.png">
 
-* Sunflower(scene1) : https://github.com/Esensia/UnityARCore_Capstone_Scene1 <br>
-* CristalView(scene2)<br>
-* Office(scene3)<br>
+* Sunflower    (scene1) : https://github.com/Esensia/UnityARCore_Capstone_Scene1 <br>
+* CristalView  (scene2)<br>
+* Office       (scene3)<br>
 
 
