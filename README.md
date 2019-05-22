@@ -8,8 +8,7 @@ ARCore : https://developers.google.com/ar/ <br>
 * Server : https://github.com/Esensia/nodejs_basic (main.js) <br> 
 * AssetBundle : https://github.com/Esensia/AssetBundle <br>
 
-# Source for Assetbundle
-* ObjectToAssetBundle
+# ObjectToAssetBundle
 ```C#
 [MenuItem("Assets/ Build AssetBundles")]
 static void BuildAllAssetBundles()
@@ -17,17 +16,26 @@ static void BuildAllAssetBundles()
     BuildPipeline.BuildAssetBundles(@"/Users/hongmingi//Desktop/AssetBundle", BuildAssetBundleOptions.ChunkBasedCompression,BuildTarget.Android);
 }
 ```
-##### 유니티상에 Asset Labels에서 정의한 이름을 AssetBundle로 만듦 
 ***
-* AssetBundle_Scene_Load
+
+# MainScreen
+<img width="939" alt="스크린샷 2019-05-22 오후 4 16 17" src="https://user-images.githubusercontent.com/41403898/58154602-f8173380-7cac-11e9-880f-48003c26ea53.png">
+
+* Sunflower    (scene1) : https://github.com/Esensia/UnityARCore_Capstone_Scene1 <br>
+* CristalView  (scene2)<br>
+* Office       (scene3)<br>
+
+***
+
+# AssetBundle_Scene_Load
 ```C#
 UnityWebRequest www;
 AssetBundle bundle;
-float delayTime = 2; // 에셋번들로 가져오는 동안 대기시간을 설정하기 위한 변수
+float delayTime = 1; // time to delay
 
 IEnumerator Start()
 {
-    www = UnityWebRequestAssetBundle.GetAssetBundle("http://13.125.111.193/scene2and/scene_2");
+    www = UnityWebRequestAssetBundle.GetAssetBundle("http://13.125.111.193/scene1/scene_1");
     yield return www.SendWebRequest();
     bundle = DownloadHandlerAssetBundle.GetContent(www);
     if (www.isNetworkError || www.isHttpError)
@@ -42,23 +50,15 @@ IEnumerator Start()
             string sceneName = System.IO.Path.GetFileNameWithoutExtension(scenePaths[0]);
             //SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
             SceneManager.LoadSceneAsync(sceneName,LoadSceneMode.Additive);
-
-            yield return new WaitForSeconds(delayTime); // Warning씬에서 assetbundle unload후 씬도 unload 
+            
+            yield return new WaitForSeconds(delayTime); 
+            
+            // AssetBundle Unload and Warning Scene Unload 
             bundle.Unload(false);
             www.Dispose();
-            SceneManager.UnloadSceneAsync("Warning");
+            SceneManager.UnloadSceneAsync("WarningLandscape");
         }
 
     }
 }
 ```
-***
-
-# MainScreen
-<img width="939" alt="스크린샷 2019-05-22 오후 4 16 17" src="https://user-images.githubusercontent.com/41403898/58154602-f8173380-7cac-11e9-880f-48003c26ea53.png">
-
-* Sunflower    (scene1) : https://github.com/Esensia/UnityARCore_Capstone_Scene1 <br>
-* CristalView  (scene2)<br>
-* Office       (scene3)<br>
-
-
