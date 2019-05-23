@@ -1,5 +1,6 @@
-# Purpose
-* Users can experience architecture and allocate furnitures by using mobile phone
+# Preview
+* Software : Unity, ARCore, AWS, Nodejs
+* Users can experience architecture and allocate furnitures by using mobile phone (android)
 * ARCore helps you to render AR  
 ![Screenshot_20190522-170004_scene_1](https://user-images.githubusercontent.com/41403898/58165871-9ca47000-7cc3-11e9-9d90-e9e7626b03e7.jpg)
 
